@@ -3,10 +3,10 @@ import Foundation
 // IF
 /////
 
-var temperature = 32
+var enemyStrength = 37
 
-if temperature > 30 {
-    print("It is hot today.")
+if enemyStrength > 30 {
+    print("Too big for me to fight.")
 }
 
 /////////////////////////////////////////////////////////////
@@ -14,12 +14,12 @@ if temperature > 30 {
 // IF ... ELSE
 //////////////
 
-var anotherTemperature = 24
+var anotherEnemy = 24
 
-if anotherTemperature > 30 {
-    print("It is still hot today.")
+if anotherEnemy > 30 {
+    print("I should run away.")
 } else {
-    print("Not too hot now.")
+    print("I think I can beat this enemy.")
 }
 
 /////////////////////////////////////////////////////////////
@@ -27,15 +27,15 @@ if anotherTemperature > 30 {
 // IF ... ELSE IF ... ELSE
 //////////////////////////
 
-var snowIsForecast = false
-var rainIsForecast = true
+var enemyIsDead = false
+var enemyPetIsDead = true
 
-if snowIsForecast == true {
-    print("Better stay at home.")
-} else if rainIsForecast == true {
-    print("Take an umbrella!")
+if enemyIsDead == true {
+    print("I WIN!!!!")
+} else if enemyPetIsDead == true {
+    print("Making progress.")
 } else {
-    print("Good weather expected today...")
+    print("This could be a long fight...")
 }
 
 /////////////////////////////////////////////////////////////
@@ -43,19 +43,19 @@ if snowIsForecast == true {
 // SWITCH
 /////////
 
-var windDirection = "S"
+var newDirection = "S"
 
-switch windDirection {
+switch newDirection {
 case "N":
-    print("Northerly wind")
+    print("🚶‍♀️ North")
 case "E":
-    print("Easterly wind")
+    print("🚶‍♀️ East")
 case "S":
-    print("Southerly wind")
+    print("🚶‍♀️ South")
 case "W":
-    print("Westerly wind")
+    print("🚶‍♀️ West")
 default:
-    print("Wind from some other direction")
+    print("Just wandering around...")
 }
 
 /////////////////////////////////////////////////////////////

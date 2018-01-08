@@ -6,22 +6,22 @@ import Foundation
 // VARIABLES
 ////////////
 
-var temperature = 29
-print(temperature)
+var hitPoints = 29
+print(hitPoints)
 
-temperature = 12
-print(temperature)
+hitPoints = 12
+print(hitPoints)
 
 /////////////////////////////////////////////////////////////
 
 // CONSTANTS
 ////////////
 
-let cityName = "Sydney"
-print(cityName)
+let playerName = "Maximus"
+print(playerName)
 
 // un-comment next line to see error
-// cityName = "Melbourne"
+// playerName = "Minimus"
 
 /////////////////////////////////////////////////////////////
 
@@ -42,17 +42,17 @@ let phase_1_active = true
 
 // TYPES
 ////////
-let anotherCityName = "Sydney"
-print(type(of: anotherCityName))
+let anotherPlayerName = "Shocker"
+print(type(of: anotherPlayerName))
 
-var anotherTemperature = 29
-print(type(of: anotherTemperature))
+var weaponStrength = 104
+print(type(of: weaponStrength))
 
-let distance = 13.54
-print(type(of: distance))
+let damagePerSecond = 13.54
+print(type(of: damagePerSecond))
 
-var isRaining = false
-print(type(of: isRaining))
+var isDead = false
+print(type(of: isDead))
 
 /////////////////////////////////////////////////////////////
 

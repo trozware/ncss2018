@@ -3,43 +3,43 @@ import Foundation
 // SIMPLE FUNCTION
 //////////////////
 
-func showWeather() {
-    print("Sunny")
+func showCharacterName() {
+    print("My name is Maximus")
 }
 
-showWeather()
+showCharacterName()
 
 /////////////////////////////////////////////////////////////
 
 // FUNCTION PARAMETERS
 //////////////////////
 
-func showWeather(weather: String) {
-    print("The weather is \(weather)")
+func showCharacterName(name: String) {
+    print("My name is \(name)")
 }
-showWeather(weather: "Cold")
+showCharacterName(name: "Griselda")
 
-func showWeather(weather: String,
-                 temperature: Int) {
-    print("The weather is \(weather)")
-    print("and it is \(temperature) degrees.")
+func showCharacter(name: String,
+                   hitPoints: Int) {
+    print("My name is \(name)")
+    print("   and I have \(hitPoints) hit points.")
 }
-showWeather(weather: "Wet", temperature: 12)
+showCharacter(name: "Bob", hitPoints: 28)
 
 /////////////////////////////////////////////////////////////
 
 // BETTER FUNCTION CALLS
 ////////////////////////
 
-func changeTemperature(newTemperature: Int) {
-    print("Changing temperature to \(newTemperature)")
+func changeHitPoints(newHitPoints: Int) {
+    print("Changing hit points to \(newHitPoints)")
 }
-changeTemperature(newTemperature: 12)
+changeHitPoints(newHitPoints: 12)
 
-func adjustTemperature(to newTemperature: Int) {
-    print("Adjusting temperature to \(newTemperature)")
+func adjustHitPoints(to newHitPoints: Int) {
+    print("Adjusting hit points to \(newHitPoints)")
 }
-adjustTemperature(to: 34)
+adjustHitPoints(to: 34)
 
 /////////////////////////////////////////////////////////////
 
@@ -74,16 +74,16 @@ print(human)
 // DEFAULT PARAMETERS
 /////////////////////
 
-func showWeather(_ weather: String,
-                 useUpperCase: Bool = false) {
-    var weatherInfo = "It is \(weather)."
+func showInfo(_ name: String,
+              useUpperCase: Bool = false) {
+    var info = "My name is \(name)."
     if useUpperCase {
-        weatherInfo = weatherInfo.uppercased()
+        info = info.uppercased()
     }
-    print(weatherInfo)
+    print(info)
 }
 
-showWeather("Snowing", useUpperCase: true)
-showWeather("Cloudy")
+showInfo("Griselda", useUpperCase: true)
+showInfo("Bob")
 
 /////////////////////////////////////////////////////////////

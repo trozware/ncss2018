@@ -3,43 +3,43 @@ import Foundation
 // STRINGS
 //////////
 
-let string1 = "I am a string!"
+let string1 = "I am a mage!"
 print(string1)
 
 let robotHead = "🤖"
-print("Here is a \(robotHead) inside another string.")
+print("I am fighting a demonic \(robotHead).")
 
-let theAnswer = 42
-print("The answer is \(theAnswer)!")
+let robotHitPoints = 427
+print("The robot has \(robotHitPoints) hit points!")
 
-let titleString = "NCSS"
-for character in titleString {
+let spellName = "Fire"
+for character in spellName.characters {
     print(character)
 }
 
-print(titleString.count)
-print(titleString.isEmpty)
+print(spellName.characters.count)
+print(spellName.isEmpty)
 
 /////////////////////////////////////////////////////////////
 
 // SWIFT 4 STRINGS - WILL NOT WORK IN SANDBOX
 /////////////////////////////////////////////
 
-for character in titleString {
+for character in spellName {
     print(character)
 }
-print(titleString.count)
-print(titleString.isEmpty)
+print(spellName.count)
+print(spellName.isEmpty)
 
-let welcome = "Welcome to Swift"
+let greeting = "I am a fire mage"
 
-let firstWord = welcome.prefix(7)
+let firstWord = greeting.prefix(4)
 print(firstWord)
 
-let lastWord = welcome.suffix(5)
-print(lastWord)
+let lastWords = greeting.suffix(9)
+print(lastWords)
 
-let words = welcome.components(separatedBy: " ")
+let words = greeting.components(separatedBy: " ")
 print(words)
 
 /////////////////////////////////////////////////////////////

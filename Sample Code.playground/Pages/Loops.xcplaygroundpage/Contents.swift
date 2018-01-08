@@ -7,9 +7,9 @@ for i in 0 ..< 3 {
     print(i)
 }
 
-let cities = ["Sydney", "Brisbane", "Melbourne"]
-for city in cities {
-    print(city)
+var classTypes = ["Mage", "Warrior", "Priest"]
+for type in classTypes {
+    print(type)
 }
 
 /////////////////////////////////////////////////////////////
@@ -17,11 +17,11 @@ for city in cities {
 // WHILE
 ////////
 
-var counter = 0
+var enemyHealth = 4
 
-while counter < 4 {
-    print(counter)
-    counter += 1
+while enemyHealth > 0 {
+    print(enemyHealth)
+    enemyHealth -= 1
 }
 
 /////////////////////////////////////////////////////////////
@@ -29,29 +29,29 @@ while counter < 4 {
 // REPEAT ... WHILE
 ///////////////////
 
-var repeatCounter = 0
+var myStamina = 0
 
 repeat {
-    print(repeatCounter)
-    repeatCounter += 2
-} while repeatCounter < 10
+    print(myStamina)
+    myStamina += 2
+} while myStamina < 10
 
 /////////////////////////////////////////////////////////////
 
 // LOOPING THROUGH DICTIONARIES
 ///////////////////////////////
 
-var cityTemperatures = [
-    "Sydney": 29, "Brisbane": 36, "Melbourne": 10
+var weaponSkills = [
+    "Sword": 7, "Staff": 36, "Bow": 17
 ]
 
-var totalTemperatures = 0
-for (key, value) in cityTemperatures {
-    print("In \(key) it is \(value)°")
-    totalTemperatures += value
+var totalSkills = 0
+for (key, value) in weaponSkills {
+    print("My skill in \(key) is \(value).")
+    totalSkills += value
 }
-let averageTemperature = totalTemperatures /
-    cityTemperatures.count
-print(averageTemperature)
+let averageSkill = totalSkills /
+    weaponSkills.count
+print(averageSkill)
 
 /////////////////////////////////////////////////////////////

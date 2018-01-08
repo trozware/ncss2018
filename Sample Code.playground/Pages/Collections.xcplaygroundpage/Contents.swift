@@ -3,58 +3,58 @@ import Foundation
 // ARRAYS
 /////////
 
-var cities = ["Sydney", "Brisbane", "Melbourne"]
-print(cities)
+var classTypes = ["Mage", "Warrior", "Priest"]
+print(classTypes)
 
-cities.append("Canberra")
-print(cities)
+classTypes.append("Rogue")
+print(classTypes)
 
-let brisIndex = cities.index(of: "Brisbane") // 1
-let darwinIndex = cities.index(of: "Darwin") // nil
+let warriorIndex = classTypes.index(of: "Warrior") // 1
+let warlockIndex = classTypes.index(of: "Warlock") // nil
 
-cities.remove(at: 1)
-print(cities)
+classTypes.remove(at: 1)
+print(classTypes)
 
 /////////////////////////////////////////////////////////////
 
 // SETS
 ///////
 
-var citySet: Set = ["Sydney", "Brisbane", "Perth"]
-print(citySet)
+var raceSet: Set = ["Human", "Dwarf", "Orc"]
+print(raceSet)
 
-citySet.insert("Canberra")
-print(citySet)
+raceSet.insert("Troll")
+print(raceSet)
 
-citySet.insert("Sydney")
-print(citySet)
+raceSet.insert("Dwarf")
+print(raceSet)
 
-citySet.remove("Perth")
-print(citySet)
+raceSet.remove("Goblin")
+print(raceSet)
 
 /////////////////////////////////////////////////////////////
 
 // DICTIONARIES
 ///////////////
 
-var cityTemperatures = [
-    "Sydney": 29, "Brisbane": 36, "Melbourne": 10
+var weaponSkills = [
+    "Sword": 7, "Staff": 36, "Bow": 17
 ]
-print(cityTemperatures)
+print(weaponSkills)
 
-cityTemperatures["Canberra"] = 23
-print(cityTemperatures)
+weaponSkills["Axe"] = 13
+print(weaponSkills)
 
-let melbourneTemp = cityTemperatures["Melbourne"]
-print("In Melbourne it is \(melbourneTemp)")
+let staffSkills = weaponSkills["Staff"]
+print("I have \(staffSkills) staff skill points.")
 
-let perthTemp = cityTemperatures["Perth"]
-print("In Perth it is \(perthTemp)")
+let maceSkills = weaponSkills["Perth"]
+print("I have \(maceSkills) mace skill points.")
 
-cityTemperatures.removeValue(forKey: "Brisbane")
-print(cityTemperatures)
+weaponSkills.removeValue(forKey: "Sword")
+print(weaponSkills)
 
-cityTemperatures.removeValue(forKey: "Perth")
-print(cityTemperatures)
+weaponSkills.removeValue(forKey: "Crossbow")
+print(weaponSkills)
 
 /////////////////////////////////////////////////////////////
